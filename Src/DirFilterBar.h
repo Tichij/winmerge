@@ -1,7 +1,7 @@
 /** 
- * @file  CDirFilterBar.h
+ * @file  DirFilterBar.h
  *
- * @brief Declaration file for Directory compare statusdialog class
+ * @brief Declaration file for CDirFilterBar dialog bar
  */
 #pragma once
 

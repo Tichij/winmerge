@@ -1,5 +1,5 @@
 /** 
- * @file  CDirFilterBar.cpp
+ * @file  DirFilterBar.cpp
  *
  * @brief Implementation of CDirFilterBar dialog bar
  */
@@ -52,13 +52,6 @@ BOOL CDirFilterBar::Create(CWnd* pParentWnd)
 	if (! CTrDialogBar::Create(pParentWnd, CDirFilterBar::IDD, 
 			CBRS_TOP | CBRS_TOOLTIPS | CBRS_FLYBY, CDirFilterBar::IDD))
 		return FALSE; 
-
-	if (HWND hSelf = GetSafeHwnd())
-	{
-		SetBarStyle(GetBarStyle() & ~CBRS_BORDER_ANY);
-		DarkMode::setWindowCtlColorSubclass(hSelf);
-		DarkMode::setChildCtrlsSubclassAndThemeEx(hSelf, true, true);
-	}
 
 	UpdateData(FALSE);
 
